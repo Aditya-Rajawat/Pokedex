@@ -1,4 +1,4 @@
-# *YumBite*
+# *Pokedex*
 
 - *Pokedex is a web application that allows users to retrieve, search and disset different pokemons based on their statistics. Users can filter pokemons based on the category and preference in category dropdown and searchbar respectively. Redux Toolkit library is used for managing the state at the top level hierarchy. Components are styled using Tailwind
 CSS. Shimmer UI is implemented so as to increase user experience.*
