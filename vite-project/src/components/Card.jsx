@@ -3,6 +3,7 @@ import PokemonCard from './PokemonCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { setOriginalList, setPokemonList } from '../utils/PokemonSlice';
 import { GET_POKEMON_API } from '../utils/constants';
+import Fallback from './FallbackPage';
 
 const Card = () => {
 
@@ -47,8 +48,10 @@ const Card = () => {
       return ()=>window.removeEventListener("scroll",handleScroll);
     },[])
 
-
-  if(!pokemonList) return;
+ 
+  if(!pokemonList || pokemonList.length===0){
+    return <Fallback/>;
+  }
 
 
   return (

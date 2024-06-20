@@ -12,7 +12,7 @@ const SearchBar = () => {
   const handleSearch=(e)=>{
       const val=e.target.value;
       const newList=originalPokemonList.filter((pokemon)=>pokemon?.name.includes(val));
-      console.log(newList)
+      // console.log(newList)
       dispatch(setPokemonList(newList));
   }
 
